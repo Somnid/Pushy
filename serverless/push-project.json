@@ -1,0 +1,14 @@
+{
+  "frameworks": {
+    "net46":{
+      "dependencies": {
+        "WebPush": "1.0.9",
+        "BouncyCastle.Crypto": "1.8.1.0",
+        "Dapper": "1.42.0",
+        "System.Data.SqlClient":"4.1.0",
+        "Microsoft.WindowsAzure.ConfigurationManager":"3.2.1",
+        "Newtonsoft.Json": "10.0.2"
+      }
+    }
+   }
+}

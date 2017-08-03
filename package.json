@@ -1,0 +1,28 @@
+{
+  "name": "pushy",
+  "version": "1.0.0",
+  "description": "push notifications",
+  "main": "index.html",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "gulp": "^3.9.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  },
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dougmhm.visualstudio.com/_git/Pushy"
+  }
+}

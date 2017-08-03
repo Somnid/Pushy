@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pushy</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="manifest" href="manifest.json" />
+		<link rel="icon" href="img/icon32x32.png" type="image/png" />
+	</head>
+	<body>
+		<app-root>
+			<section>
+				<h1>Subscribe for Notifications</h1>
+				<label for="subscribe-name">Name</label>
+				<persistent-textbox id="subscribe-name" placeholder="name" storage-key="name"></persistent-textbox>
+				<notification-manager application-server-key="BHwu1Ks1yG2mCVw2sO5n8nX0769S6n2HL16a8B8fZvN6zg4jrh7rkURjI9STYuxAEp_mmvmyAc60mHHDAuzZXZY"></notification-manager>
+			</section>
+			<section>
+				<h1>Send a Notification</h1>
+				<label for="send-name">Recipient</label>
+				<input id="send-name" type="text" placeholder="send name" autocomplete="off" autocapitalize="none" spellcheck="false" />
+				<label for="send-message">Message</label>
+				<input id="send-message" type="text" placeholder="message text" autocomplete="off" autocapitalize="none" spellcheck="false" />
+				<button id="send-button">Send</button>
+			</section>
+			<section>
+				<h1>Connect</h1>
+				<label for="connect-name">Recipient</label>
+				<persistent-textbox id="connect-name"  placeholder="recipient name" storage-key="recipient-name"></persistent-textbox>
+				<rtc-communicator></rtc-communicator>
+			</section>
+		</app-root>
+		<service-worker url="service-worker.js" scope="/."></service-worker>
+		<footer>
+			<p>&copy; 2017 - Pushy<span>&nbsp;Build:#{MyBuildNumber}#</span></p>
+		</footer>
+		<script src="js/libs/rtc-connector.js"></script>
+		<script src="js/libs/bus.js"></script>
+		<script src="js/services/user-push-service.js"></script>
+		<script src="js/components/app-root.js"></script>
+		<script src="js/components/persistent-textbox.js"></script>
+		<script src="js/components/notification-manager.js"></script>
+		<script src="js/components/rtc-communicator.js"></script>
+		<script src="js/components/chat-box.js"></script>
+		<script src="js/components/chat-bubble.js"></script>
+		<script src="js/components/service-worker.js"></script>
+	</body>
+</html>
